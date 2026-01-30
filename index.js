@@ -1,14 +1,8 @@
-const express = require("express");
+
+const express = require('express');
 const app = express();
-
-app.get("/", (req, res) => {
-  res.send("Bot is alive 🚀");
-});
-
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Keep-alive server running on port ${PORT}`);
-});
+app.get('/', (req, res) => res.send('XYZAWE BOT ONLINE'));
+app.listen(process.env.PORT || 3000);
 
 // DISCORD
 const { Client, GatewayIntentBits, ActivityType } = require('discord.js');
