@@ -46,4 +46,4 @@ client.once('ready', () => {
 
 client.on('voiceStateUpdate', updateStatus);
 
-client.login(process.env.TOKEN);
+client.login(process.env.TOKEN)
